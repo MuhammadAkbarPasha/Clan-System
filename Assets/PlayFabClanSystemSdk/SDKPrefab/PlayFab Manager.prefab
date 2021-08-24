@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3118692200300600476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3118692200300600478}
+  - component: {fileID: 3118692200300600477}
+  - component: {fileID: 3118692200300600479}
+  - component: {fileID: 7575986683712076793}
+  m_Layer: 0
+  m_Name: PlayFab Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3118692200300600478
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3118692200300600476}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3118692200300600477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3118692200300600476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d22486f5d5f5e48ab82acbf3b58dab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayFabUserId: 
+  PlayFabTitleId: 7E58E
+  NoFacebookLogging: 0
+  PlayerDataKey: PlayerData
+  username: 
+  Lives: 0
+  Energies: 0
+  Coins: 0
+  Hints: 0
+  Timers: 0
+  SpinWheels: 0
+  BonusLife1: 0
+  BonusLife2: 0
+  BonusLife3: 0
+  bonusLifeTimer:
+    startTime: 
+    endTime: 
+    useBonusLife: 0
+  vipTimer:
+    startTime: 
+    endTime: 
+    canUseVip: 0
+  timeToDisplay: 
+  requestlivesCap: 10
+  getlivesCap: 5
+  currentMember:
+    Id: 
+    Type: 
+    TypeString: 
+    MemberPersonalData:
+      ID: 
+      Level: 0
+      GroupUsername: 
+    MemberRole:
+      RoleName: 
+      RoleId: 
+    MemberGroup:
+      Id: 
+      Type: 
+      TypeString: 
+      GroupName: 
+  PhotonAppId: bffb931e-4099-4289-a952-001920ed978c
+--- !u!114 &3118692200300600479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3118692200300600476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be137d9f15430a4580bdb3526a32299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playFabClanData:
+    groupsData:
+      Groups: []
+    newGroupsData:
+      GroupName: 
+      Group:
+        Id: 
+        Type: 
+        TypeString: 
+        GroupName: 
+      MemberRoleId: 
+      AdminRoleId: 
+      Roles:
+        admins: 
+        members: 
+      Created: 
+      ProfileVersion: 0
+    groupInformation:
+      ImageId: 0
+      Description: 
+      isOpen: 1
+    currentGroupData:
+      Id: 
+      Type: 
+      TypeString: 
+      GroupName: 
+    thisPlayerGroupData:
+      Groups:
+      - GroupName: 
+        Group:
+          Id: 
+          Type: 
+          TypeString: 
+          GroupName: 
+        ProfileVersion: 0
+        Roles: []
+    selectedGroupApplications:
+      Applications: []
+    allMembersInSelectedGroup:
+      Members: []
+    acceptedApplicationMember:
+      Id: 
+      Type: 
+      TypeString: 
+      MemberPersonalData:
+        ID: 
+        Level: 0
+        GroupUsername: 
+      MemberRole:
+        RoleName: 
+        RoleId: 
+      MemberGroup:
+        Id: 
+        Type: 
+        TypeString: 
+        GroupName: 
+    promotionMember:
+      Id: 
+      Type: 
+      TypeString: 
+      MemberPersonalData:
+        ID: 
+        Level: 0
+        GroupUsername: 
+      MemberRole:
+        RoleName: 
+        RoleId: 
+      MemberGroup:
+        Id: 
+        Type: 
+        TypeString: 
+        GroupName: 
+    groupMembers:
+      groupMembers: []
+    appliedMembers:
+      groupMembers: []
+    MembersFromPlayfab:
+      groupMembers: []
+  MasterPlayerids: []
+  uiController: {fileID: 0}
+  applyWithName: 1
+  groupUserNameLimit: 0
+  levelLimit: 0
+--- !u!114 &7575986683712076793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3118692200300600476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4db5f3994dd530d4a94f9c5627a0a20d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

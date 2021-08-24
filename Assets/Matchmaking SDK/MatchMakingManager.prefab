@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8020836030830289806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8020836030830289807}
+  - component: {fileID: 8020836030830289796}
+  - component: {fileID: 8020836030830289795}
+  - component: {fileID: 8020836030830289794}
+  - component: {fileID: 8020836030830289793}
+  - component: {fileID: 8020836030830289792}
+  m_Layer: 0
+  m_Name: MatchMakingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8020836030830289807
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8020836030830289806}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8020836030830289796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8020836030830289806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579f7778fa6e5094da16bc866a273a99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerId: 
+--- !u!114 &8020836030830289795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8020836030830289806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9f56a9b9376b7b4188193b93e542639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmrRange: 0
+  matchmakerSearchParameters: {fileID: 11400000, guid: 423461683ec9ebe49bd48c05a54a9b4f,
+    type: 2}
+  masterLeaderboardName: Level
+  encounteredValidIDs: []
+  continueIndex: -1
+  loadingPlayer: 0
+  m_LastOpp: 
+  playersInCurrentTier: []
+  test: 0
+  DoSearchAgain: 0
+--- !u!114 &8020836030830289794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8020836030830289806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d4a5e68242bfd49a9216a92ca9b1d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerView: {fileID: 0}
+  opponentView: {fileID: 0}
+  inGamePlayerView: {fileID: 0}
+  inGameOpponentView: {fileID: 0}
+  MatchStartDelay: 3
+  PlayerSprite: {fileID: 0}
+  EnemySprite: {fileID: 0}
+--- !u!114 &8020836030830289793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8020836030830289806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0de32f55dae4414f9cf9926f23d159a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInfo: {fileID: 0}
+  enemyInfo: {fileID: 0}
+--- !u!114 &8020836030830289792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8020836030830289806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de49804b78f8ac4469ffef30a4bd67f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDoingRevenge: 0
+  revengeId: 

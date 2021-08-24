@@ -1,0 +1,365 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1324371392872388429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1324371392872388428}
+  - component: {fileID: 1324371392872388431}
+  - component: {fileID: 1324371392872388430}
+  - component: {fileID: 1324371392872388433}
+  - component: {fileID: 7202142120435202755}
+  - component: {fileID: 1324371392872388427}
+  - component: {fileID: 1324371392872388426}
+  m_Layer: 0
+  m_Name: PvP Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1324371392872388428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324371392872388429}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1324371392872388431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324371392872388429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fde1cf7e2ffb7034eaedb207609bc1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UsePVP: 1
+  minimumTimeForWaitingForOthersPlayersToJoinYourRoom: 7
+  LevelNumber: 0
+  ReconnectingTime: 15
+  pvpTest: 0
+  gamePlayManager: {fileID: 0}
+  rejoinCalled: 0
+  reconnectCalled: 0
+  inRoom: 0
+  wasInRoom: 0
+--- !u!114 &1324371392872388430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324371392872388429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d57627494635f524f98a05d0eba9467f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerData:
+    PlayerArena: Arena1
+  DebugText: {fileID: 0}
+  AllCities:
+  - CityName: Paris
+    MinRange: 0
+    MaxRange: 9
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General10
+      Probability: 80
+  - CityName: London
+    MinRange: 10
+    MaxRange: 29
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General10
+      Probability: 55
+    - GeneralName: General11
+      Probability: 25
+  - CityName: New York City
+    MinRange: 30
+    MaxRange: 49
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General10
+      Probability: 35
+    - GeneralName: General11
+      Probability: 45
+  - CityName: Bangkok
+    MinRange: 50
+    MaxRange: 69
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General10
+      Probability: 25
+    - GeneralName: General11
+      Probability: 55
+  - CityName: Hong Kong
+    MinRange: 70
+    MaxRange: 89
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General11
+      Probability: 55
+    - GeneralName: General12
+      Probability: 25
+  - CityName: Singapore
+    MinRange: 90
+    MaxRange: 119
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General12
+      Probability: 55
+    - GeneralName: General13
+      Probability: 25
+  - CityName: Tokyo
+    MinRange: 120
+    MaxRange: 149
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General12
+      Probability: 45
+    - GeneralName: General13
+      Probability: 35
+  - CityName: Dubai
+    MinRange: 150
+    MaxRange: 179
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General12
+      Probability: 25
+    - GeneralName: General13
+      Probability: 55
+  - CityName: Macau
+    MinRange: 180
+    MaxRange: 209
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General13
+      Probability: 55
+    - GeneralName: General14
+      Probability: 25
+  - CityName: Rome
+    MinRange: 210
+    MaxRange: 239
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General14
+      Probability: 55
+    - GeneralName: General15
+      Probability: 25
+  - CityName: Kuala Lumpur
+    MinRange: 240
+    MaxRange: 269
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General14
+      Probability: 45
+    - GeneralName: General15
+      Probability: 35
+  - CityName: Istanbul
+    MinRange: 270
+    MaxRange: 299
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General14
+      Probability: 25
+    - GeneralName: General15
+      Probability: 55
+  - CityName: New Delhi
+    MinRange: 300
+    MaxRange: 329
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General15
+      Probability: 55
+    - GeneralName: General16
+      Probability: 25
+  - CityName: Taipei
+    MinRange: 330
+    MaxRange: 359
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General16
+      Probability: 55
+    - GeneralName: General17
+      Probability: 25
+  - CityName: Prague
+    MinRange: 360
+    MaxRange: 389
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General16
+      Probability: 45
+    - GeneralName: General17
+      Probability: 35
+  - CityName: Seoul
+    MinRange: 390
+    MaxRange: 419
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General16
+      Probability: 25
+    - GeneralName: General17
+      Probability: 55
+  - CityName: Amsterdam
+    MinRange: 420
+    MaxRange: 449
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General17
+      Probability: 55
+    - GeneralName: General18
+      Probability: 25
+  - CityName: Osaka
+    MinRange: 450
+    MaxRange: 479
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General18
+      Probability: 80
+  - CityName: Las Vegas
+    MinRange: 480
+    MaxRange: 509
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General18
+      Probability: 80
+  - CityName: Shanghai
+    MinRange: 510
+    MaxRange: 539
+    Probability: 20
+    GeneralTypesIncluded:
+    - GeneralName: General18
+      Probability: 80
+  AllGenerals:
+  - GeneralName: General10
+    minRange: 0
+    maxRange: 49
+  - GeneralName: General11
+    minRange: 50
+    maxRange: 99
+  - GeneralName: General12
+    minRange: 100
+    maxRange: 149
+  - GeneralName: General13
+    minRange: 150
+    maxRange: 199
+  - GeneralName: General14
+    minRange: 200
+    maxRange: 249
+  - GeneralName: General15
+    minRange: 250
+    maxRange: 299
+  - GeneralName: General16
+    minRange: 300
+    maxRange: 349
+  - GeneralName: General17
+    minRange: 350
+    maxRange: 399
+  - GeneralName: General18
+    minRange: 400
+    maxRange: 499
+  DebugCityName: 
+  Generals: []
+--- !u!114 &1324371392872388433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324371392872388429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41bc078ba8188f244a45a58b839721ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DebugText: {fileID: 0}
+--- !u!114 &7202142120435202755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324371392872388429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c360a44f9b51a2145ad11387a5a2a350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stuckTest: 0
+  player1Instance:
+    realTimePVP: {fileID: 0}
+    playerScorePanelController: {fileID: 0}
+    PlayerFoundDifferences: 
+  player2Instance:
+    realTimePVP: {fileID: 0}
+    playerScorePanelController: {fileID: 0}
+    PlayerFoundDifferences: 
+  GamePanel: {fileID: 0}
+  MatchInProgress: 0
+  testPoint: 0
+  hasIDownloadedAssetsAndReady: 0
+  hasOtherDownloadedAssetsAndReady: 0
+  Puzzles: []
+  levelObject:
+    levelNumber: 0
+    levelType: 
+    StackName: 
+--- !u!114 &1324371392872388427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324371392872388429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8f7e252d7f6945409738936aa229d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  YouEmotesParent: {fileID: 0}
+  EmoteObject: {fileID: 2517378544953027983, guid: c63f1d898905c2740968f27bf32f3c15, type: 3}
+  emotes:
+  - {fileID: 21300000, guid: f924e73107666ce40901f90cf5315ad9, type: 3}
+  - {fileID: 21300000, guid: b89fc7f55899ffd4ca7e92a32581ae85, type: 3}
+  - {fileID: 21300000, guid: fae8a25d030c16f4886fecc0c9b0c64d, type: 3}
+  - {fileID: 21300000, guid: a07aca5cc8d107c4b9c443423002e8ae, type: 3}
+  - {fileID: 21300000, guid: d8748c7928294494c9681d1a1d594c9d, type: 3}
+  - {fileID: 21300000, guid: 557e63904472d194e973386579615b63, type: 3}
+  - {fileID: 21300000, guid: 25f02bf92d6d3544aa88f63c050a1ade, type: 3}
+  - {fileID: 21300000, guid: ae574ca682dc7624cbf8e5ec9b6c1c75, type: 3}
+  LocalEmote: {fileID: 0}
+  RemoteEmote: {fileID: 0}
+  LocalMessage: {fileID: 0}
+  RemoteMessage: {fileID: 0}
+--- !u!114 &1324371392872388426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324371392872388429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a7839953ce8daf4a97e3749b56d5f3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cityStackSystem:
+    stacks: []
+  generalStackSystem:
+    stacks: []
